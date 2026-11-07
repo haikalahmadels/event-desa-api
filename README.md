@@ -57,3 +57,20 @@ Contoh body POST/PUT (`kategori_id`, `judul`, `tanggal` wajib):
 ```
 
 Collection Postman siap import: [`event-desa.postman_collection.json`](event-desa.postman_collection.json).
+
+## Hasil Tes di Postman
+
+### POST (membuat data baru)
+![POST](docs/routes/post.png)
+
+### GET (dapatkan semua data)
+![GET semua](docs/routes/get-all.png)
+
+### GET (dapatkan data berdasarkan ID)
+![GET by ID](docs/routes/get-by-id.png)
+
+### PUT (update data berdasarkan ID)
+![PUT](docs/routes/put.png)
+
+### DELETE (hapus data berdasarkan ID)
+![DELETE](docs/routes/delete.png)
