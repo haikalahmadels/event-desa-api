@@ -1,0 +1,14 @@
+{
+  "name": "event-desa-api",
+  "version": "1.0.0",
+  "description": "REST API Sistem Informasi Event Desa (Express + PostgreSQL)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --env-file=.env index.js",
+    "dev": "node --watch --env-file=.env index.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "pg": "^8.13.1"
+  }
+}

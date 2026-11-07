@@ -1,0 +1,36 @@
+{
+  "info": {
+    "name": "Event Desa API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [{ "key": "baseUrl", "value": "http://localhost:3000/api/kegiatan" }],
+  "item": [
+    {
+      "name": "POST - Buat kegiatan",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "url": "{{baseUrl}}",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"kategori_id\": 3,\n  \"judul\": \"Pengajian Akbar\",\n  \"deskripsi\": \"Pengajian rutin bulanan\",\n  \"lokasi\": \"Masjid Desa\",\n  \"tanggal\": \"2026-12-01\",\n  \"kuota\": 100\n}"
+        }
+      }
+    },
+    { "name": "GET - Semua kegiatan", "request": { "method": "GET", "url": "{{baseUrl}}" } },
+    { "name": "GET - Kegiatan by ID", "request": { "method": "GET", "url": "{{baseUrl}}/1" } },
+    {
+      "name": "PUT - Update kegiatan",
+      "request": {
+        "method": "PUT",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "url": "{{baseUrl}}/1",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"kategori_id\": 1,\n  \"judul\": \"Kerja Bakti Bersih Selokan & Jalan\",\n  \"deskripsi\": \"Membersihkan selokan dan jalan desa\",\n  \"lokasi\": \"Jl. Melati\",\n  \"tanggal\": \"2026-11-16\",\n  \"kuota\": 40\n}"
+        }
+      }
+    },
+    { "name": "DELETE - Hapus kegiatan", "request": { "method": "DELETE", "url": "{{baseUrl}}/2" } }
+  ]
+}
